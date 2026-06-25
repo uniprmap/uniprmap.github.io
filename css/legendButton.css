@@ -65,3 +65,20 @@
 .legend-panel br {
     line-height: 24px;
 }
+
+/* Hide legend texts and content by default */
+#legend-texts { 
+    display:none; 
+}
+
+.legend-content { 
+    display:none; 
+}
+
+.legend-content.active { 
+    display:block; 
+}
+
+.legend-noscript { 
+    margin:8px 0; font-size:14px; 
+}
