@@ -36,22 +36,6 @@ let legendPanel = null;
 export let legendLanguage = 'it';
 
 /**
- * Fetches JSON data from multiple paths, returning the first successful response.
- * @param {string[]} paths - An array of paths to fetch JSON data from.
- * @returns {Promise<Object>} - A promise that resolves to the JSON data from the first successful fetch.
- * @throws {Error} - Throws an error if all fetch attempts fail.
- */
-async function fetchJsonWithFallback(paths) {
-    for (const path of paths) {
-        const response = await fetch(path);
-        if (response.ok) {
-            return response.json();
-        }
-    }
-    throw new Error(`Impossibile caricare JSON da: ${paths.join(', ')}`);
-}
-
-/**
  * Populates data structures, pre-processes GeoJSON data, and renders map elements on startup. 
  * It loads all the data on the start of the website.
  * @returns
@@ -67,14 +51,8 @@ export function loadMapData() {
         }
     });
     Promise.all([
-        fetchJsonWithFallback([
-            `/${repositoryName}/json/map.geojson`,
-            './json/map.geojson'
-        ]),
-        fetchJsonWithFallback([
-            `/${repositoryName}/json/websiteFeatures.geojson`,
-            './json/websiteFeatures.geojson'
-        ])
+        fetch('./json/map.geojson').then(res => res.json()),
+        fetch('./json/websiteFeatures.geojson').then(res => res.json())
     ])
     .then(([mapData, websiteData]) => {
         if (websiteData.features) {
