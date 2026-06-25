@@ -1,0 +1,130 @@
+.floor-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    max-width: 35%;
+}
+
+.floor-selector label {
+    font-weight: 600;
+    color: #003d7a;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.floor-select-wrapper {
+    position: relative;
+}
+
+.floor-select-button {
+    padding: 10px 40px 10px 15px;
+    border: 2px solid #003d7a;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    user-select: none;
+}
+
+.floor-select-button:hover {
+    border-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 61, 122, 0.2);
+}
+
+.floor-select-button.active {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0, 61, 122, 0.1);
+}
+
+.floor-select-text {
+    flex: 1;
+}
+
+.floor-select-arrow {
+    width: 15px;
+    height: 15px;
+    filter: brightness(0) saturate(100%) invert(16%) sepia(59%) saturate(3131%) hue-rotate(196deg) brightness(89%) contrast(102%);
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 15px;
+}
+
+.floor-select-button.active .floor-select-arrow {
+    transform: rotate(180deg);
+}
+
+.floor-options {
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    border: 2px solid #e0e0e0;
+    position: absolute;
+    width: 100%;
+    z-index: 1001;
+}
+
+.floor-options.visible {
+    display: block;
+}
+
+.floor-option {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease;
+    font-size: 1rem;
+    color: #333;
+}
+
+.floor-option:last-child {
+    border-bottom: none;
+}
+
+.floor-option:hover {
+    background-color: #f0f7ff;
+}
+
+.floor-option.selected {
+    background-color: #e6f2ff;
+    color: #003d7a;
+    font-weight: 600;
+}
+
+/* Stile scrollbar per floor-options */
+.floor-options::-webkit-scrollbar {
+    width: 8px;
+}
+
+.floor-options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.floor-options::-webkit-scrollbar-thumb {
+    background: #003d7a;
+    border-radius: 4px;
+}
+
+.floor-options::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}

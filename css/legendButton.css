@@ -1,0 +1,67 @@
+
+.legend-button {
+    z-index: 1000;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.legend-button:hover {
+    background-color: #f4f4f4;
+}
+
+.legend-button.legend-active {
+    background-color: #f4f4f4;
+}
+
+.legend-button img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) saturate(100%) invert(17%) sepia(17%) saturate(11%) hue-rotate(23deg) brightness(96%) contrast(90%);
+}
+
+/* Legend Panel Styles */
+.legend-panel {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1001;
+    padding: 10px 12px;
+    background: white;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    max-height: 30%;
+    overflow-y: auto;
+    min-width: 150px;
+    max-width: 45%;
+}
+
+.legend-panel h4 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.legend-panel i {
+    width: 18px; 
+    height: 18px; 
+    display: inline-block; 
+    margin-right: 8px; 
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.legend-panel br {
+    line-height: 24px;
+}

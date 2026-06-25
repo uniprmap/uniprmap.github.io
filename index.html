@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#005fb8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>UniPR Map</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/floorSelector.css">
+    <link rel="stylesheet" href="css/searchbar.css">
+    <link rel="stylesheet" href="css/homeButton.css">
+    <link rel="stylesheet" href="css/legendButton.css">
+    <link rel="stylesheet" href="css/mapBottomButtons.css">
+</head>
+<body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    
+    <header>
+        <h1>UniPR Map</h1>
+    </header>
+    
+    <div class="map-container">
+        <div id="map"></div>
+        
+        <div class="search-container hidden">
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="Search rooms, labs, buildings..." autocomplete="off">
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+        
+        <div class="map-bottom-buttons">
+            <button id="home-button" class="home-button" title="Reset to initial view">
+                <img src="icons/house-regular-full.svg"></img>
+            </button>
+
+            <button id="legend-button" class="legend-button" title="Show/Hide Legend">
+                <img src="icons/info-solid-full.svg"></img>
+            </button>
+        </div>
+
+        <div class="floor-selector">
+            <label for="floor-select">Floor selector:</label>
+            <div class="floor-select-wrapper">
+                <div id="floor-select" class="floor-select-button">
+                    <span class="floor-select-text">Roof</span>
+                    <img class="floor-select-arrow" src="icons/caret-down-solid-full.svg"></img>
+                </div>
+                <div id="floor-options" class="floor-options"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="js/events.js"></script>
+</body>
+</html>
