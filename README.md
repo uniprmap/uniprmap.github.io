@@ -1,6 +1,6 @@
 # 🗺️ UniPR Interactive Map (English)
 
-[Link to the website] (https://uniprmap.github.io)
+Website available on: https://uniprmap.github.io
 
 **UniPR Interactive Map** is a proposed new interactive map for the **University of Parma**, designed primarily for **new students** and **Erasmus students**.  
 It provides detailed navigation across university facilities, both **inside buildings** (floor plans) and **across the city**.
@@ -120,7 +120,7 @@ All are located in the `mapElements.js` file.
 
 # 🗺️ UniPR Interactive Map (Italiano)
 
-[Link al sito] (https://uniprmap.github.io)
+Sito disponibile su: https://uniprmap.github.io
 
 **UniPR Interactive Map** è una proposta di nuova mappa interattiva per l’**Università di Parma**, progettata principalmente per **nuovi studenti** e **studenti Erasmus**.  
 Fornisce una navigazione dettagliata delle strutture universitarie, sia **all’interno degli edifici** (piante dei piani) sia **a livello cittadino**.
