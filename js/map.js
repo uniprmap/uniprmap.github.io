@@ -1,6 +1,6 @@
 import {preProcessedGeoJSONData, renderOnStartup, LAYER_CONFIG, RENDER_ORDER} from './mapElements.js';
 
-const repositoryName = 'uniprinteractivemap';
+const repositoryName = 'uniprmap';
 
 // Map initialization
 const START_CENTER = [44.7649, 10.3123];
@@ -124,7 +124,7 @@ export function showLegend() {
             search: 'Cerca edifici, aule e laboratori dell\'università usando la barra di ricerca. Il risultato selezionato ti porterà nella posizione corrispondente sulla mappa.',
             zoom: 'Ingrandisci la vista sugli edifici del Dipartimento di Ingegneria e Architettura (quelli grigi) per mostrare i controlli dei piani ed esplorare ogni edificio nel dettaglio. I pulsanti di interazione diventano disponibili solo a livelli di zoom più alti.',
             click: 'Clicca sui tetti degli edifici interattivi e sulle stanze colorate al loro interno per vedere informazioni dettagliate.',
-            project: 'Il progetto è open source ed è disponibile su <a href="https://github.com/LeoKap19/UniPR-Interactive-Map" target="_blank" rel="noopener noreferrer">GitHub</a>. Chiunque è invitato/a a collaborare per ampliare la mappa con nuovi dipartimenti interattivi.',
+            project: 'Il progetto è open source ed è disponibile su <a href="https://github.com/uniprmap/uniprmap.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>. Chiunque è invitato/a a collaborare per ampliare la mappa con nuovi dipartimenti interattivi.',
             author: 'Realizzato con passione da: Leonardo Capodacqua',
             quote: '“Un piccolo progetto con un obiettivo semplice: aiutare le persone ad orientarsi facilmente.”',
             legend: 'Legenda'
@@ -135,7 +135,7 @@ export function showLegend() {
             search: 'Search for university buildings, rooms, and laboratories using the search bar. The selected result will bring you to the corresponding location on the map.',
             zoom: 'Zoom in on the Department of Engineering and Architecture buildings (the grey ones) to reveal floor controls and explore each building in detail. Interaction buttons become available only at higher zoom levels.',
             click: 'Click on the roofs of the interactive buildings and on the colored rooms inside them to view detailed information.',
-            project: 'The project is open source and available on <a href="https://github.com/LeoKap19/UniPR-Interactive-Map" target="_blank" rel="noopener noreferrer">GitHub</a>. Collaborators are welcome to help expand the map with new interactive departments.',
+            project: 'The project is open source and available on <a href="https://github.com/uniprmap/uniprmap.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>. Collaborators are welcome to help expand the map with new interactive departments.',
             author: 'Made with passion by: Leonardo Capodacqua',
             quote: '“A little project with a simple goal: helping people find their way easily.”',
             legend: 'Legend'
